@@ -268,68 +268,92 @@ ul a{
 .copyright{
     padding-top: 5px;
 }
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 750px;
+@media screen and (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .nav-logo {
+        height: 40px;
+        width: 80px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin: 10px 0;
+        order: 3;
+    }
+
+    /* Panel adjustments */
+    .panel {
+        height: auto;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .panel-ops {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .panel-ops p {
+        display: block;
+        margin: 8px 0;
+    }
+
+    /* Shop section adjustments */
+    .box {
+        width: 45%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .box-img {
+        height: 200px;
+    }
+
+    /* Footer adjustments */
+    .foot-panel2 {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .foot-panel3 {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
     }
 }
 
-/* For desktop */
-@media screen and (min-width: 1024px) {
-    .container {
-        max-width: 970px;
+@media screen and (max-width: 480px) {
+    /* Additional adjustments for smaller screens */
+    .box {
+        width: 90%;
     }
-}
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
-.flex-item {
-    flex: 1 1 300px; /* This makes items responsive */
-}
-
-/* Grid example */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-.nav-menu {
-    display: none;
-    width: 100%;
-}
-
-.nav-menu.active {
-    display: block;
-}
-
-/* Hamburger menu for mobile */
-.hamburger {
-    display: block;
-}
-
-/* Desktop navigation */
-@media screen and (min-width: 768px) {
-    .nav-menu {
-        display: flex;
-        width: auto;
+    .hero-msg {
+        width: 90%;
+        padding: 10px;
     }
-    
-    .hamburger {
-        display: none;
+
+    .search-select {
+        width: 40px;
+        font-size: 0.8rem;
+    }
+
+    .search-input {
+        font-size: 0.9rem;
+    }
+
+    .nav-cart i {
+        font-size: 24px;
+    }
+
+    .add-first, .add-second {
+        font-size: 0.8rem;
     }
 }

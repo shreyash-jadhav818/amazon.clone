@@ -272,88 +272,160 @@ ul a{
     /* Navbar adjustments */
     .navbar {
         height: auto;
-        flex-wrap: wrap;
-        padding: 10px;
+        flex-direction: column;
+        padding: 10px 5px;
+        gap: 10px;
     }
 
     .nav-logo {
-        height: 40px;
-        width: 80px;
+        height: 35px;
+        width: 70px;
     }
 
     .nav-search {
-        width: 100%;
-        margin: 10px 0;
-        order: 3;
+        width: 95%;
+        height: 40px;
+        margin: 5px 0;
+    }
+
+    /* Address section */
+    .add-icon {
+        padding: 5px;
+    }
+
+    .add-first {
+        font-size: 0.75rem;
+        margin-left: 5px;
     }
 
     /* Panel adjustments */
     .panel {
-        height: auto;
-        padding: 10px;
-        flex-wrap: wrap;
+        padding: 8px 5px;
     }
 
     .panel-ops {
         width: 100%;
-        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
     .panel-ops p {
-        display: block;
-        margin: 8px 0;
+        margin-left: 5px;
+        font-size: 0.75rem;
     }
 
-    /* Shop section adjustments */
-    .box {
-        width: 45%;
-        height: auto;
-        margin: 10px 0;
-    }
-
-    .box-img {
+    /* Hero section */
+    .hero-section {
         height: 200px;
     }
 
-    /* Footer adjustments */
-    .foot-panel2 {
-        height: auto;
-        flex-direction: column;
-        padding: 20px;
+    /* Shop section adjustments */
+    .shop-section {
+        padding: 10px 5px;
     }
 
-    .foot-panel3 {
+    .box {
+        width: 95%;
         height: auto;
-        padding: 15px;
-        flex-wrap: wrap;
+        min-height: 300px;
+        margin: 8px 0;
+        padding: 10px;
+    }
+
+    .box-img {
+        height: 180px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    /* Additional adjustments for smaller screens */
-    .box {
-        width: 90%;
-    }
-
-    .hero-msg {
-        width: 90%;
-        padding: 10px;
+    /* Navbar refinements */
+    .nav-search {
+        width: 92%;
     }
 
     .search-select {
-        width: 40px;
-        font-size: 0.8rem;
+        width: 35px;
+        font-size: 0.7rem;
     }
 
     .search-input {
-        font-size: 0.9rem;
-    }
-
-    .nav-cart i {
-        font-size: 24px;
-    }
-
-    .add-first, .add-second {
         font-size: 0.8rem;
+        padding: 0 5px;
+    }
+
+    .search-icon {
+        width: 35px;
+        font-size: 1rem;
+    }
+
+    /* Footer adjustments */
+    .foot-panel1 {
+        height: 40px;
+        font-size: 0.75rem;
+    }
+
+    .foot-panel2 {
+        padding: 15px 10px;
+    }
+
+    ul a {
+        font-size: 0.75rem;
+        margin-top: 8px;
+    }
+
+    .foot-panel3 {
+        padding: 10px;
+    }
+
+    .foot-panel3 .logo {
+        width: 80px;
+        height: 40px;
+    }
+
+    .foot-panel4 {
+        height: auto;
+        padding: 10px 5px;
+    }
+
+    /* Additional spacing and alignment */
+    .border {
+        padding: 5px;
+    }
+
+    .nav-cart {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    /* Fix for any text overflow */
+    * {
+        word-wrap: break-word;
+    }
+}
+
+/* Additional breakpoint for very small devices */
+@media screen and (max-width: 360px) {
+    .navbar {
+        padding: 5px 2px;
+    }
+
+    .nav-search {
+        width: 90%;
+    }
+
+    .box {
+        width: 98%;
+        margin: 5px 0;
+    }
+
+    .hero-msg {
+        width: 95%;
+        font-size: 0.7rem;
+    }
+
+    .panel-ops p {
+        font-size: 0.7rem;
     }
 }

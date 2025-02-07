@@ -1,2 +1,2 @@
 # amazon.clone
-An Amazon cone made by using HTML and CSS
+An Amazon clone made by using HTML and CSS
